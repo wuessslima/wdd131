@@ -1,0 +1,54 @@
+body {
+    font-family: Arial, sans-serif;
+    text-align: center;
+}
+
+table {
+    width: 60%;
+    margin: 20px auto;
+    border-collapse: collapse;
+}
+
+caption {
+    font-size: 0.9rem;
+    margin-top: 8px;
+    color: #666;
+}
+
+th, td {
+    border: 1px solid #ccc;
+    padding: 10px;
+    text-align: center;
+}
+
+/* Fundo preto e letras brancas no título ACME */
+.title-row th {
+    background-color: black;
+    color: white;
+    font-size: 1.2rem;
+    padding: 15px;
+}
+
+.tier-header {
+    background-color: #333;
+    color: white;
+}
+
+.check {
+    color: #5D4EA2;
+    font-size: 1.2rem;
+}
+
+.cross {
+    color: #D52B1E;
+    font-size: 1.2rem;
+}
+
+/* Zebra striping for rows */
+tbody tr:nth-child(odd) {
+    background-color: #ffffff;
+}
+
+tbody tr:nth-child(even) {
+    background-color: #f4f4f4;
+}
