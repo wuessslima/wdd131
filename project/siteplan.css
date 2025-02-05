@@ -1,0 +1,139 @@
+/* Importação de Fontes do Google Fonts */
+@import url('https://fonts.googleapis.com/css2?family=Cinzel:wght@400;700&family=Crimson+Text:wght@400;700&family=Raleway:wght@400;700&display=swap');
+
+/* Paleta de Cores "Mist and Metal" */
+:root {
+  --mist-gray: #B0B0B0;
+  --metal-silver: #C0C0C0;
+  --abyss-black: #1A1A1A;
+  --steel-blue: #3A4E7A;
+  --blood-red: #8B0000;
+
+  --font-main: 'Crimson Text', serif;
+  --font-accent: 'Cinzel', serif;
+  --font-nav: 'Raleway', sans-serif;
+}
+
+body {
+  background-color: var(--abyss-black);
+  color: var(--mist-gray);
+  font-family: var(--font-main);
+  line-height: 1.6;
+  margin: 0;
+  padding: 0;
+}
+
+header {
+  background-color: var(--steel-blue);
+  color: var(--metal-silver);
+  text-align: center;
+  padding: 1rem 0;
+  font-size: 2rem;
+  font-family: var(--font-accent);
+  letter-spacing: 1px;
+}
+
+nav {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  gap: 0.5rem;
+}
+
+nav a {
+  color: var(--metal-silver);
+  text-decoration: none;
+  padding: 0.5rem 1rem;
+  transition: color 0.3s;
+  font-family: var(--font-nav);
+  font-weight: 700;
+  text-transform: uppercase;
+}
+
+nav a:hover {
+  color: var(--blood-red);
+}
+
+main {
+  padding: 2rem;
+  max-width: 800px;
+  margin: auto;
+  background-color: var(--abyss-black);
+  border: 1px solid var(--steel-blue);
+  border-radius: 8px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.7);
+}
+
+h1, h2, h3 {
+  color: var(--metal-silver);
+  border-bottom: 2px solid var(--steel-blue);
+  padding-bottom: 0.3rem;
+  font-family: var(--font-accent);
+  letter-spacing: 0.5px;
+}
+
+button {
+  background-color: var(--steel-blue);
+  color: var(--metal-silver);
+  border: none;
+  padding: 0.5rem 1rem;
+  border-radius: 4px;
+  cursor: pointer;
+  transition: background 0.3s;
+  font-family: var(--font-nav);
+  font-weight: bold;
+  text-transform: uppercase;
+}
+
+button:hover {
+  background-color: var(--blood-red);
+}
+
+footer {
+  background-color: var(--steel-blue);
+  color: var(--metal-silver);
+  text-align: center;
+  padding: 1rem 0;
+  margin-top: 2rem;
+  font-family: var(--font-accent);
+}
+
+/* Versão Mobile */
+@media (max-width: 768px) {
+  header {
+    font-size: 1.5rem;
+    padding: 0.8rem 0;
+  }
+
+  nav {
+    flex-direction: column;
+    gap: 0.3rem;
+  }
+
+  nav a {
+    padding: 0.5rem;
+    font-size: 0.9rem;
+  }
+
+  main {
+    padding: 1rem;
+    margin: 1rem;
+    box-shadow: none;
+    border: none;
+  }
+
+  h1, h2, h3 {
+    font-size: 1.4rem;
+  }
+
+  button {
+    width: 100%;
+    padding: 0.75rem;
+    font-size: 0.9rem;
+  }
+
+  footer {
+    font-size: 0.9rem;
+    padding: 0.8rem 0;
+  }
+}
