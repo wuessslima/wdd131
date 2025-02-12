@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mist & Metal - Mistborn Reviews</title>
+    <link rel="stylesheet" href="./styles/mistmetal.css">
+    <link
+        href="https://fonts.googleapis.com/css2?family=Crimson+Text:wght@700&family=Cinzel:wght@400;700&family=Raleway:wght@400;700&display=swap"
+        rel="stylesheet">
+    <script src="./scripts/mistmetal.js" defer></script>
+</head>
+
+<body>
+    <header>
+        <h1>Mist & Metal</h1>
+        <nav>
+            <ul>
+                <li><a href="#home">Home</a></li>
+                <li><a href="#final-empire">The Final Empire</a></li>
+                <li><a href="#well-of-ascension">The Well of Ascension</a></li>
+                <li><a href="#hero-of-ages">The Hero of Ages</a></li>
+                <li><a href="#comments">Reviews & Comments</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <!-- Hero Image -->
+        <div id="hero">
+            <img src="images/hero-image.jpg" alt="Mistborn Trilogy Covers" loading="lazy">
+        </div>
+        <!-- Home Section -->
+        <section id="home">
+            <h2>Welcome to the Mistborn Review Hub</h2>
+            <p>Explore in-depth synopses and critiques of Brandon Sanderson's Mistborn trilogy. Discover the magic of
+                Allomancy, the rise of heroes, and the shadows of the Final Empire.</p>
+        </section>
+
+        <!-- The Final Empire -->
+        <section id="final-empire">
+            <h2>The Final Empire</h2>
+            <p>A world shrouded in ash and ruled by an immortal tyrant. Follow Vin as she discovers her powers and joins
+                a rebellion to overthrow the Lord Ruler.</p>
+            <a href="final-empire.html"><button>Read Full Review</button></a>
+        </section>
+
+        <!-- The Well of Ascension -->
+        <section id="well-of-ascension">
+            <h2>The Well of Ascension</h2>
+            <p>With the empire fallen, new threats emerge. Vin and Elend must face political intrigue and ancient powers
+                stirring beneath the surface.</p>
+            <a href="well-of-ascension.html"><button>Read Full Review</button></a>
+        </section>
+
+        <!-- The Hero of Ages -->
+        <section id="hero-of-ages">
+            <h2>The Hero of Ages</h2>
+            <p>The fate of the world hangs in the balance. As Ruin's influence spreads, Vin and her allies confront the
+                ultimate challenge to save humanity.</p>
+            <a href="hero-of-ages.html"><button>Read Full Review</button></a>
+        </section>
+
+        <!-- Reviews & Comments Section -->
+        <section id="comments">
+            <h2>Reviews & Comments</h2>
+            <div id="ratingSection">
+                <p>Rate this page:</p>
+                <div id="stars">
+                    <span data-value="1">☆</span>
+                    <span data-value="2">☆</span>
+                    <span data-value="3">☆</span>
+                    <span data-value="4">☆</span>
+                    <span data-value="5">☆</span>
+                </div>
+                <p>Average Rating: <span id="averageRating">0</span> ☆</p>
+            </div>
+
+            <form id="commentForm" method="post">
+                <label for="userName">Your Name:</label>
+                <input type="text" id="userName" name="userName" required>
+
+                <label for="commentText">Your Comment:</label>
+                <textarea id="commentText" name="commentText" required></textarea>
+
+                <button type="submit">Submit Comment</button>
+            </form>
+
+            <div id="commentList">
+                <h3>Comments</h3>
+                <!-- Comments will be dynamically added here -->
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <p>&copy; 2025 Mist & Metal | All Rights Reserved</p>
+        <p>Wireframe: <a href="https://miro.com/app/board/uXjVLjO3h38=/?share_link_id=444646688941"
+                target="_blank">Click Here</a></p>
+    </footer>
+</body>
+
+</html>

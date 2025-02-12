@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>The Well of Ascension - Mist & Metal</title>
+    <link rel="stylesheet" href="./styles/mistmetal.css">
+    <link href="https://fonts.googleapis.com/css2?family=Crimson+Text:wght@700&family=Cinzel:wght@400;700&family=Raleway:wght@400;700&display=swap" rel="stylesheet">
+    <script src="./scripts/mistmetal.js" defer></script>
+</head>
+<body>
+    <header>
+        <h1>Mist & Metal</h1>
+        <nav>
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="final-empire.html">The Final Empire</a></li>
+                <li><a href="well-of-ascension.html" aria-current="page">The Well of Ascension</a></li>
+                <li><a href="hero-of-ages.html">The Hero of Ages</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <section id="book-details">
+            <div class="book-cover">
+                <img src="images/well-of-ascension-cover.jpg" alt="The Final Empire Cover" loading="lazy">
+            </div>
+            <h2>The Well of Ascension</h2>
+            <p>With the empire fallen, new threats emerge. Vin and Elend must face political intrigue and ancient powers stirring beneath the surface.</p>
+        </section>
+
+        <!-- Reviews & Comments Section -->
+        <section id="comments">
+            <h2>Reviews & Comments</h2>
+            <div id="ratingSection">
+                <p>Rate this book:</p>
+                <div id="stars">
+                    <span data-value="1">☆</span>
+                    <span data-value="2">☆</span>
+                    <span data-value="3">☆</span>
+                    <span data-value="4">☆</span>
+                    <span data-value="5">☆</span>
+                </div>
+                <p>Average Rating: <span id="averageRating">0</span> ☆</p>
+            </div>
+
+            <form id="commentForm" method="post">
+                <label for="userName">Your Name:</label>
+                <input type="text" id="userName" name="userName" required>
+
+                <label for="commentText">Your Comment:</label>
+                <textarea id="commentText" name="commentText" required></textarea>
+
+                <button type="submit">Submit Comment</button>
+            </form>
+
+            <div id="commentList">
+                <h3>Comments</h3>
+                <!-- Comments will be dynamically added here -->
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <p>&copy; 2025 Mist & Metal | All Rights Reserved</p>
+        <p>Wireframe: <a href="https://miro.com/app/board/uXjVLjO3h38=/?share_link_id=444646688941" target="_blank">Click Here</a></p>
+    </footer>
+</body>
+</html>
